@@ -19,18 +19,22 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul>
-            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#format-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#format-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -41,7 +45,7 @@
           </h1>
         </div>
       </section>
-      <section advantages-section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -53,7 +57,8 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">Новий формат традицій</h2>
+          <div class="traditions-container">
+            <h2 class="traditions-title section-title">Новий формат традицій</h2>
           <p class="traditions-text">
             <span class="brand uppercase">shop bakery</span> — це пекарня, яка
             взяла все найкраще, і зберегла смак традиційної випічки та
@@ -67,8 +72,8 @@
           </p>
           <img
             src="./images/baker-man.jpg"
-            alt="Пекар дивиться на батони з посмішкою"
-          />
+            alt="Пекар дивиться на батони з посмішкою"/>
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
@@ -147,7 +152,8 @@
             Приєднуйтеся до мережі пекарень
           </h2>
           <p>Заповни форму, щоб ми зв'язались з тобою!</p>
-          <iframe class="iframe"
+          <iframe
+            class="iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18563.932523879037!2d14.345181290346934!3d46.23939074075877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ab7bc76e61f61%3A0xbea5f16c7827d676!2sRestavracija%20STARA%20PRAVDA!5e0!3m2!1suk!2sua!4v1727098206533!5m2!1suk!2sua"
             width="600"
             height="450"
