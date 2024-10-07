@@ -68,6 +68,8 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -115,6 +117,29 @@ ul {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1 ;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+
 /* Hero section */
 .hero-section {
   padding: 272px 0px;
@@ -131,10 +156,18 @@ ul {
 .hero-title .accent {
   color: var(--color-brand-light);
 }
+
 /* Adv section */
+.advantages-section {
+ background-color: var(--color-brand-light); 
+ padding: 16px 0;
+}
+
 .advantages-list {
+  display: flex;
   color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .section-title {
@@ -150,6 +183,11 @@ ul {
 /* Traditions-section */
 .traditions-section {
 padding-top: 96px;
+gap: 100px;
+}
+
+.traditions-container {
+  display: flex;
 }
 
 .traditions-title {
