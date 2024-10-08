@@ -188,6 +188,12 @@ gap: 100px;
 
 .traditions-container {
   display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
 }
 
 .traditions-title {
@@ -201,6 +207,10 @@ gap: 100px;
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 .advantages-item {
@@ -221,6 +231,21 @@ gap: 100px;
 }
 
 /* Formats-section */
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.format-item {
+  flex-basis: calc((100%-40px) / 3);
+}
+
+.format-card {
+  border: 1px solid darkblue;
+  border-radius: 16px;
+}
+
 .formats-title {
   font-size: 24px;
   font-weight: 600;
