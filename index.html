@@ -15,7 +15,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header>
       <div class="container">
@@ -89,7 +88,11 @@
           <ul>
             <li>
               <article>
-                <img class='chef-image' src="./images/nastya-chef.jpeg" alt="Настя шеф">
+                <img
+                  class="chef-image"
+                  src="./images/nastya-chef.jpeg"
+                  alt="Настя шеф"
+                />
                 <h3 class="chef-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -98,7 +101,11 @@
             </li>
             <li>
               <article>
-                <img class='chef-image' src="./images/vlad-chef.jpeg" alt="Влад шеф">
+                <img
+                  class="chef-image"
+                  src="./images/vlad-chef.jpeg"
+                  alt="Влад шеф"
+                />
                 <h3 class="chef-title">Влад</h3>
                 <p>Привіт, я Влад!</p>
                 <p>
@@ -114,6 +121,11 @@
       <section class="section" id="format-section" class="format-section">
         <div class="container">
           <h2 class="section-title centered">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
             <li class="format-item">
               <article class="format-card">
@@ -151,6 +163,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contact-section">
@@ -190,30 +207,38 @@
           <address>
             <ul>
               <li>
-                <a class="address-link" href="tel:+380960000007"
+                <a class="link address-link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
               <li>
-                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                <a class="link address-link" href="mailto:shopbakery@gmail.com"
                   >shopbakery@gmail.com</a
                 >
               </li>
               <li>
                 <a
-                  class="address-link"
+                  class="link address-link"
                   href="https://maps.app.goo.gl/o7hCHhnzbzqNi8NEA"
                   target="_blank"
                 >
                   Україна, м. Київ, вул. Січових Стрільців 54</a
                 >
               </li>
-              <li><a href="#"></a></li>
-              <!-- facebook ic -->
-              <li><a href="#"></a></li>
-              <!-- instagram ic-->
+              <li>
+                <a href="#"></a
+                ><svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li>
+                <a href="#"></a
+                ><svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
             </ul>
-            <a class="address-link" href="#" target="_blank"
+            <a class="link address-link" href="#" target="_blank"
               >Політика конфіденційності</a
             >
             <p class="address-copyright">&copy; 2024 Дані захищені</p>
