@@ -80,7 +80,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="chefs-section">
+      <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title centered">
             Наші накращі <span class="accent">шеф-кухарі</span>
@@ -95,9 +95,11 @@
                 />
                 <div>
                   <h3 class="chef-title">Настя</h3>
-                  <p class="chef-text">Привіт, я Настя!</p>
-                  <p class="chef-text">Вже 10 років, я втілюю <br>у життя цікаві та смачні ідеї.</p>
-                  <p class="chef-text">Я випічу для вас <br>найсмачніші вироби!</p>
+                  <div class="chef-text">
+                    <p class="chef-text">Привіт, я Настя!</p>
+                    <p class="chef-text">Вже 10 років, я втілюю <br>у життя цікаві та смачні ідеї.</p>
+                    <p class="chef-text">Я випічу для вас <br>найсмачніші вироби!</p>
+                  </div>
                 </div>
               </article>
             </li class="chefs-item">
@@ -123,7 +125,7 @@
           </ul>
         </div>
       </section>
-      <section class="section" id="format-section" class="format-section">
+      <section class="format-section section" id="format-section">
         <div class="container">
           <h2 class="section-title centered">Формати</h2>
           <div class="formats-container">
@@ -177,79 +179,91 @@
         </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
-            Приєднуйтеся до мережі пекарень
-          </h2>
-          <p>Заповни форму, щоб ми зв'язались з тобою!</p>
-          <iframe
-            class="iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18563.932523879037!2d14.345181290346934!3d46.23939074075877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ab7bc76e61f61%3A0xbea5f16c7827d676!2sRestavracija%20STARA%20PRAVDA!5e0!3m2!1suk!2sua!4v1727098206533!5m2!1suk!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Приєднуйтеся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми зв'язались з тобою!</p>
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18563.932523879037!2d14.345181290346934!3d46.23939074075877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ab7bc76e61f61%3A0xbea5f16c7827d676!2sRestavracija%20STARA%20PRAVDA!5e0!3m2!1suk!2sua!4v1727098206533!5m2!1suk!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <nav>
-            <a href="#"></a>
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-            <!-- logo/ menu -->
-            <ul>
-              <li><a class="link" href="#">Франшиза</a></li>
-              <li><a class="link" href="#">Наші традиції</a></li>
-              <li><a class="link" href="#">Формати</a></li>
-              <li><a class="link" href="#">Контакти</a></li>
-            </ul>
-          </nav>
-          <address>
-            <ul>
-              <li>
-                <a class="link address-link" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="link address-link" href="mailto:shopbakery@gmail.com"
-                  >shopbakery@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link address-link"
-                  href="https://maps.app.goo.gl/o7hCHhnzbzqNi8NEA"
-                  target="_blank"
-                >
-                  Україна, м. Київ, вул. Січових Стрільців 54</a
-                >
-              </li>
-              <li>
-                <a href="#"></a
-                ><svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </li>
-              <li>
-                <a href="#"></a
-                ><svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </li>
-            </ul>
-            <a class="link address-link" href="#" target="_blank"
-              >Політика конфіденційності</a
-            >
+          <div class="footer-container">
+            <nav class="footer-nav">
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+                </a>
+              </div>
+              <!-- logo/ menu -->
+              <ul class="footer-menu">
+                <li><a class="link" href="#">Франшиза</a></li>
+                <li><a class="link" href="#">Наші традиції</a></li>
+                <li><a class="link" href="#">Формати</a></li>
+                <li><a class="link" href="#">Контакти</a></li>
+              </ul>
+            </nav>
+            <address class="footer-address">
+              <ul class="address-list">
+                <li>
+                  <a class="link address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a class="link address-link" href="mailto:shopbakery@gmail.com"
+                    >shopbakery@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link address-link"
+                    href="https://maps.app.goo.gl/o7hCHhnzbzqNi8NEA"
+                    target="_blank"
+                  >
+                    Україна, м. Київ,<br> вул. Січових Стрільців 54</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+             <div class="address-info">
+              <a class="link address-link" href="#" target="_blank"
+              >Політика конфіденційності</a>
             <p class="address-copyright">&copy; 2024 Дані захищені</p>
-          </address>
+             </div>
+            </address>
+          </div>
         </div>
       </div>
     </footer>
