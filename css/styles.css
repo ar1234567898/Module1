@@ -237,16 +237,25 @@ ul {
 
 /* Chef-section */
 .chefs-title {
-  max-width: 520px;
+  position: relative;
   margin: 0px auto 80px;
 }
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: '';
+}
+
+.chefs-title::before {
+  left: 0px;
+}
+
+.chefs-title::after {
+  right: 0px;  
 }
 
 .chefs-list {
@@ -258,7 +267,7 @@ ul {
   flex-basis: calc((100% - 30px) / 2);
  }
 
- .chefs-card {
+ .chef-card {
   display: flex;
   gap: 30px;
 }
@@ -363,7 +372,13 @@ border: none;
 
 /* Footer */
 .footer {
+  position: relative;
   padding: 32px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-container {
@@ -414,10 +429,24 @@ border: none;
   font-size: 14px;
 }
 
-.footer {
-  background-color: var(--color-primary-dark);
-  background-image: url('../images/footer-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.footer::before{
+  position: absolute;
+  width: 241px;
+  height: 370px;
+  background-size: 100%;
+  background-image: url(../images/bread1.png);
+  content: '';
+  bottom: -250px;
+    left: -50px;
+}
+
+.footer::after{
+  position: absolute;
+  width: 415px;
+  height: 428px;
+  background-size: 100%;
+  background-image: url(../images/bread2.png);
+  content: '';
+  bottom: -260px;
+  right: -50px;
 }
