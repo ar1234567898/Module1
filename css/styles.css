@@ -1,33 +1,33 @@
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: url('../fonts/poppins-v21-latin-200.woff2') format('woff2');
+  src: url("../fonts/poppins-v21-latin-200.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/poppins-v21-latin-regular.woff2') format('woff2');
+  src: url("./fonts/poppins-v21-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+  src: url("../fonts/poppins-v21-latin-900.woff2") format("woff2");
 }
 :root {
   --color-primary-dark: #31261a;
@@ -151,7 +151,7 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0px;
-  background-image: url('../images/hero-bg.jpeg');
+  background-image: url("../images/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -183,7 +183,7 @@ ul {
 }
 
 .advantages-item {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -247,7 +247,7 @@ ul {
   bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-brand-light);
-  content: '';
+  content: "";
 }
 
 .chefs-title::before {
@@ -255,26 +255,27 @@ ul {
 }
 
 .chefs-title::after {
-  right: 0px;  
+  right: 0px;
 }
 
 .chefs-list {
-  display: flex; 
+  display: flex;
   gap: 40px 30px;
 }
 
-.chefs-item { 
+.chefs-item {
   flex-basis: calc((100% - 30px) / 2);
- }
+}
 
- .chef-card {
+.chef-card {
   display: flex;
   gap: 30px;
 }
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -341,7 +342,7 @@ ul {
   fill: var(--color-primary-dark);
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid var(--color-primary-dark); 
+  border: 1px solid var(--color-primary-dark);
   cursor: pointer;
 }
 
@@ -365,17 +366,18 @@ ul {
 }
 
 .contact-map {
-flex-shrink: 0;
-border-radius: 16px;
-border: none;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 
 /* Footer */
 .footer {
   position: relative;
+  overflow: hidden;
   padding: 32px 0;
   background-color: var(--color-primary-dark);
-  background-image: url('../images/footer-bg.png');
+  background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -392,11 +394,11 @@ border: none;
   display: flex;
   flex-basis: 50%;
   gap: 20px;
-}  
+}
 
 .footer-logo,
 .footer-menu {
-  flex-grow: 1 ;
+  flex-grow: 1;
 }
 
 .address-link,
@@ -429,26 +431,26 @@ border: none;
   font-size: 14px;
 }
 
-.footer::before{
+.footer::before {
   position: absolute;
   width: 241px;
   height: 370px;
   background-size: 100%;
   background-image: url(../images/bread1.png);
-  content: '';
-  bottom: -250px;
+  content: "";
+  bottom: -220px;
   left: -50px;
 }
 
-.footer::after{
+.footer::after {
   position: absolute;
   width: 415px;
   height: 428px;
   background-size: 100%;
   background-image: url(../images/bread2.png);
-  content: '';
-  bottom: -260px;
-  right: -50px;
+  content: "";
+  bottom: -220px;
+  right: 100px;
 }
 
 /* Modal */
@@ -462,14 +464,8 @@ border: none;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal {
-  position: relative;
-  width: 880px;
-  height: 880px;
-  background-color: var(--color-primary-light);
-  border-radius: 30px;
+  padding: 20px 0;
+  transition: opacity .3s, visibility .3s;
 }
 
 .backdrop.is-hidden {
@@ -478,19 +474,18 @@ border: none;
   pointer-events: none;
 }
 
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 30px;
+}
+
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
