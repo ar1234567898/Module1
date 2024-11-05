@@ -109,6 +109,7 @@ ul {
   border-radius: 8px;
   cursor: pointer;
   padding: 16px 32px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
@@ -159,7 +160,13 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0px;
-  background-image: url("../images/hero-bg.jpeg");
+  background-image: 
+    linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ), url("../images/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -453,6 +460,7 @@ ul {
 
 .address-copyright {
   font-size: 14px;
+  color: var(--color-secondary-dark);
 }
 
 .footer::before {
@@ -499,13 +507,16 @@ ul {
 }
 
 .modal {
+
   position: relative;
   width: 100%;
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primary-light);
   border-radius: 30px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
@@ -514,13 +525,59 @@ ul {
   right: 40px;
 }
 
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  display: block;
+ }
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px ;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
 
 
 
-
-linear-gradient(
-  102,76deg,
-  rgba(18, 18, 17, 0.78) 2.03%
-  rgba(18, 18, 17, 0.6) 58.46%
-  rgba(18, 18, 17, 0) 90.36%
-  ),
