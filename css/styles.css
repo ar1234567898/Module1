@@ -120,14 +120,22 @@ ul {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .link:hover {
   color: var(--color-brand-normal);
-  font-weight: 600;
 }
 
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -235,6 +243,10 @@ ul {
   max-width: 340px;
 }
 
+.traditions-image {
+  border-radius: 200px 200px 0 0;
+}
+
 /* Chef-section */
 .chefs-title {
   position: relative;
@@ -295,6 +307,7 @@ ul {
 /* Formats-section */
 .formats-container {
   display: flex;
+  width: 100%;
   gap: 32px;
   align-items: center;
 }
@@ -318,6 +331,13 @@ ul {
     rgba(49, 38, 26, 0.71) 72.917%,
     rgb(49, 38, 26) 100%
   );
+  border-radius: 16px;
+  transition: transform 0.3s;
+  border-color: #465929;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 .formats-title {
@@ -344,6 +364,10 @@ ul {
   border-radius: 50%;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -465,7 +489,7 @@ ul {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -489,3 +513,14 @@ ul {
   top: 40px;
   right: 40px;
 }
+
+
+
+
+
+linear-gradient(
+  102,76deg,
+  rgba(18, 18, 17, 0.78) 2.03%
+  rgba(18, 18, 17, 0.6) 58.46%
+  rgba(18, 18, 17, 0) 90.36%
+  ),
