@@ -1,53 +1,10 @@
-@font-face {
-    font-display: swap;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 200;
-    src: url("../fonts/poppins-v21-latin-200.woff2") format("woff2");
-  }
+    @import './utils/fonts';
   
-  @font-face {
-    font-display: swap;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    src: url("./fonts/poppins-v21-latin-regular.woff2") format("woff2");
-  }
+    @import './utils/variables';
   
-  @font-face {
-    font-display: swap;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
-  }
+    @import './base';
   
-  @font-face {
-    font-display: swap;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 900;
-    src: url("../fonts/poppins-v21-latin-900.woff2") format("woff2");
-  }
-  :root {
-    --color-primary-dark: #31261a;
-    --color-primary-light: #faf4ea;
-    --color-brand-normal: #819b57;
-    --color-brand-dark: #465929;
-    --color-brand-light: #cfcfbc;
-    --color-secondary-dark: #a28268;
-  }
-  
- @import './base';
-  
-  .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
+    @import './utils/utils.scss';
   
   .section {
     padding: 48px 0;
@@ -59,62 +16,14 @@
     margin: 0 auto;
   }
   
-  /* Button */
-  .button {
-    color: var(--color-primary-light);
-    font-weight: 600;
-    background-color: var(--color-brand-normal);
-    border: 2px solid var(--color-brand-normal);
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 16px 32px;
-    transition: background-color 0.3s, color 0.3s;
-  }
+  @import './components/buttons';
   
-  .button:hover {
-    background-color: transparent;
-    color: var(--color-brand-dark);
-  }
   
-  /* Link */
-  .link {
-    color: var(--color-primary-light);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+ @import './components/links';
   
-  .link:hover {
-    color: var(--color-brand-normal);
-  }
   
-  /* Header */
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
-  }
-  
-  .header-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    gap: 40px;
-  }
-  
-  .header-menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
-  }
+@import './components/header';
+
   
   /* Hero section */
   .hero-section {
