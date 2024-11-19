@@ -2,7 +2,8 @@
     @import './utils/variables';
     @import './base';
     @import './utils/utils.scss';
-  
+    @import './utils/texts';
+
   .section {
     padding: 48px 0;
   }
@@ -25,3 +26,4 @@
     @import './components/footer';
     @import './components/modal';
     @import './components/form';  
+    @import './components/sections';
