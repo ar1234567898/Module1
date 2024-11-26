@@ -1,12 +1,14 @@
-.form-field {
-    margin-bottom: 32px;
-  }
+.input {
+  position: relative;  
   
-  .form-label {
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
     display: block;
    }
-  
-  .form-input {
+
+  &__control {
     padding: 16px 42px;
     width: 100%;
     font-size: 16px;
@@ -14,28 +16,22 @@
     border: 1px solid var(--color-secondary-dark);
     border-radius: 8px;
     background-color: transparent;
-  }
-  
-  .form-input:focus {
+
+  &:focus {
     border-color: var(--color-brand-normal);
     outline: none;
   }
-  
-  .form-input::placeholder {
+  &::placeholder {
     color: var(--color-secondary-dark);
     font-size: 16px;
     line-height: 1.17;
   }
   
-  
-  .form-input:focus::placeholder {
+  &:focus::placeholder {
     color: var(--color-primary-dark);
   }
-  
-  .form-button {
-    display: block;
-    margin: 0 auto 24px ;
   }
+}
   
   .form-terms {
     margin: 0 auto;
@@ -44,9 +40,9 @@
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-  }
-  
-  .form-terms-link {
-    color: var(--color-primary-dark);
-    text-underline-offset: 2px;
+
+    &__link {
+      color: var(--color-primary-dark);
+      text-underline-offset: 2px;   
+    }
   }
