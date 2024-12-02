@@ -10,13 +10,15 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
     transition: opacity 0.3s, visibility 0.3s;
-  }
-  
-  .backdrop.is-hidden {
+
+  &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
+  }
+  
+
   
   .modal {
   
@@ -28,11 +30,23 @@
     padding: 128px;
     background-color: var(--color-primary-light);
     border-radius: 30px;
-    overflow-y: auto;
-  }
-  
-  .modal-btn-close {
+    overflow-y: auto;    
+    
+  &-btn-close {
     position: absolute;
     top: 40px;
     right: 40px;
   }
+
+  &__form-field {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 24px;
+  }
+  
+
+}
+  
