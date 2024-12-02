@@ -4,9 +4,7 @@
     @import './utils/utils.scss';
     @import './utils/texts';
 
-  .section {
-    padding: 48px 0;
-  }
+
   
   .container {
     width: 100%;
@@ -25,7 +23,8 @@
     @import './components/contact-section';
     @import './components/footer';
     @import './components/modal';
-    @import './components/form';  
+    @import './components/form-terms';  
     @import './components/sections';
     @import './components/chef-card';
     @import './components/format-card';
+    @import './components/input'
