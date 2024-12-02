@@ -19,9 +19,27 @@
   }
 
   &__menu {
+     display: none;
+    @media screen and (min-width:$bp-pc) {
     display: flex;
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
+    }
+    
+  }
+  
+  &__button {
+    display: none;
+
+    @media screen and (min-width:$bp-pc) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    @media screen and (min-width:$bp-pc) {
+      display: none;
+    }
   }
 }
